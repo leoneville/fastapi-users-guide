@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Copia os arquivos do repositório
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Instalar o Python
         uses: actions/setup-python@v5
@@ -23,8 +23,8 @@ jobs:
       - name: Instalar o Poetry
         run: pipx install poetry
 
-      - name: Instalar dependências
-        run: poetry install --no-root
+      - name: Instalar dependencias
+        run: poetry install
 
       - name: Executar testes
         run: echo "testes executados com sucesso. (Isso é apenas um teste XD)"
